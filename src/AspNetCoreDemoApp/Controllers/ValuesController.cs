@@ -24,5 +24,11 @@ namespace AspNetCoreDemoApp.Controllers
 		{
 			return "value";
 		}
-	}
+
+        [HttpGet("{id}/sample")]
+        public string GetSample(int id)
+        {
+            return "sample";
+        }
+    }
 }
